@@ -1,0 +1,6 @@
+project: savantenvs/robin-map
+target: set-ops
+cmds:
+  - cmd: /mayhem/fuzz_set_ops
+    libfuzzer: true
+    timeout: 5

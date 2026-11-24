@@ -1,0 +1,9 @@
+project: savantenvs/robin-map
+target: deserialize
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/deserialize/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_deserialize
+    libfuzzer: true
+    timeout: 5

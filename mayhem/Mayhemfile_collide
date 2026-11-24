@@ -1,0 +1,6 @@
+project: savantenvs/robin-map
+target: collide
+cmds:
+  - cmd: /mayhem/fuzz_collide
+    libfuzzer: true
+    timeout: 30
